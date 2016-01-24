@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SwipeView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<SwipeViewDataSource>
 
+@property (nonatomic, copy) void (^draggedOut)(id yes);
 
 @end
 
